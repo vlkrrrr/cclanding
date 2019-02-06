@@ -7,5 +7,6 @@ import { DataService } from './shared/data.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'cc';
+  constructor(public dataService: DataService){}
+  
 }
