@@ -14,13 +14,15 @@ import {MatButtonModule} from '@angular/material';
     AppComponent,
     BizComponent,
     ImpressumComponent,
-    MapComponent,
-    MatButtonModule
+    MapComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    MatButtonModule
+  ],
+  exports: [
     MatButtonModule
   ],
   providers: [],
