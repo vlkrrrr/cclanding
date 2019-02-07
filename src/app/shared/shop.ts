@@ -8,4 +8,5 @@ export class Shop {
     public website: string;
     public openhours: string;
     public note: string;
+    public symbol: string;
 }

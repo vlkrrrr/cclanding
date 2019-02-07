@@ -6,8 +6,15 @@ import { AppComponent } from './app.component';
 import { BizComponent } from './biz/biz.component';
 import { ImpressumComponent } from './impressum/impressum.component';
 import { MapComponent } from './map/map.component';
-import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import {MatButtonModule} from '@angular/material';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {
+  MatButtonModule,
+  MatCardModule,
+  MatDividerModule,
+  MatBadgeModule,
+  MatIconModule
+} from '@angular/material';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 @NgModule({
   declarations: [
@@ -19,11 +26,20 @@ import {MatButtonModule} from '@angular/material';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    FlexLayoutModule,
     BrowserAnimationsModule,
-    MatButtonModule
+    MatButtonModule,
+    MatCardModule,
+    MatDividerModule,
+    MatBadgeModule,
+    MatIconModule
   ],
   exports: [
-    MatButtonModule
+    MatButtonModule,
+    MatCardModule,
+    MatDividerModule,
+    MatBadgeModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]

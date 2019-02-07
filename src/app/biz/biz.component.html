@@ -1,3 +1,12 @@
-<p>
-  biz works!
-</p>
+<mat-card class="example-card"  matBadge="{{biz.id}}" matBadgePosition="before" matBadgeSize="large">
+  <mat-card-header>
+    <div mat-card-avatar style="font-size: 40px"><mat-icon [inline]="true">{{biz.symbol}}</mat-icon></div>
+    <mat-card-title>{{biz.name}}</mat-card-title>
+    <mat-card-subtitle>{{biz.type}}</mat-card-subtitle>
+  </mat-card-header>
+  <mat-card-content class="cap-card-content">
+<p *ngIf="biz.openhours"></p><p class="cap-openhours" [innerHTML]="biz.openhours"></p>
+<p *ngIf="biz.tel" class="cap-detail">Telefon:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{biz.tel}}</p>
+<p *ngIf="biz.website" class="cap-detail">Website:&nbsp;&nbsp;&nbsp;&nbsp;<a href="{{biz.website}}" target="_blank"><i class="fa fa-external-link" aria-hidden="true"></i> externer Link</a></p>
+  </mat-card-content>
+</mat-card>
