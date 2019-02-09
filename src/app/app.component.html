@@ -1,6 +1,8 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div fxLayout="row" fxLayoutAlign="center">
-  <div fxLayout="column" fxFlex="1024px">
+<div fxLayout="row" fxLayoutAlign="center center" > 
+<div fxFlexFill></div>
+<div fxLayout="column" fxLayoutGap="25px" fxLayoutAlign="center" fxFlex.lg="1024px" fxFlex.xl="1024px">
+
 
 <div fxLayoutAlign="center">
     <h1 class="title">
@@ -15,13 +17,23 @@
 
 <div class="mat-app-background basic-container">
 
+  <div 
+  fxLayout="row wrap" 
+  fxLayout.lt-sm="column" 
+  fxLayoutGap="25px grid" 
+  fxLayoutAlign="center center">
 <ng-container *ngFor="let shop of dataService.shops; let i = index">
-    <app-biz [biz]="shop"></app-biz>
+    <app-biz fxFlex="0 1 calc(33.3% - 32px)"
+    fxFlex.lt-md="0 1 calc(50% - 32px)"
+    fxFlex.lt-sm="100%"
+    [biz]="shop"></app-biz>
 </ng-container>
-
+</div>
 
 
 <router-outlet></router-outlet>
+
 </div>
 </div>
+<div fxFlexFill></div>
 </div>
