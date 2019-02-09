@@ -5,6 +5,7 @@
     font-style: normal; 
     color: #d3150e;
     letter-spacing: 3px;
+    margin:12px;
 }
 
 @media screen and (min-width: 1024px) {
@@ -16,7 +17,7 @@
   /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
   @media screen and (max-width: 1023px) {
     .title {
-       font-size: 30pt;;
+       font-size: 50pt;;
     }
   }
 

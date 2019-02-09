@@ -1,3 +1,50 @@
 .map-card {
     /* max-width: 900px; */
   }
+
+  .img-container {
+    position: relative;
+  }
+  
+  img {
+      width: 1024px;
+  }
+  
+  .overlay {
+      display: inline-block;
+      color: rgba(0, 0, 0, 0.54);
+      background-color: white;
+      padding: 5px;
+      border-radius: 5%;
+      position: absolute;
+      bottom: 38px;
+      left: 50px;
+  }
+
+  .overlay2 {
+    display: inline-block;
+    color: transparent;
+    text-align: center;
+    vertical-align: middle;
+    padding: 5px;
+    font-size:24px;
+    font-weight: 700;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 300px;
+    left: 150px;
+    height: 25px;
+    width: 25px;
+    display: table-cell;
+  }
+  .overlay3 {
+    display: inline-block;
+    color: rgba(0, 0, 0, 0.54);
+    background-color: white;
+    padding: 5px;
+    border-radius: 5%;
+    position: absolute;
+    bottom: 30px;
+    left: 300px;
+}
+
