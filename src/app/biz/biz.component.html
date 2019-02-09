@@ -5,7 +5,7 @@
     <mat-card-subtitle>{{biz.type}}</mat-card-subtitle>
   </mat-card-header>
   <mat-card-content class="cap-card-content">
-<p *ngIf="biz.openhours"></p><p class="cap-openhours" [innerHTML]="biz.openhours"></p>
+<p *ngIf="biz.openhours" class="cap-detail"></p>Öffnungszeiten:<br><p class="cap-openhours" [innerHTML]="biz.openhours"></p>
 <p *ngIf="biz.tel" class="cap-detail">Telefon:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{biz.tel}}</p>
 <p *ngIf="biz.website" class="cap-detail">Website:&nbsp;&nbsp;&nbsp;&nbsp;<a href="{{biz.website}}" target="_blank"><i class="fa fa-external-link" aria-hidden="true"></i> externer Link</a></p>
   </mat-card-content>
