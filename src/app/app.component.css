@@ -19,3 +19,26 @@
        font-size: 30pt;;
     }
   }
+
+  a:link {
+    color:rgba(0, 0, 0, 0.54);
+    text-decoration: none;
+  }
+  a:visited {
+    color: rgba(0, 0, 0, 0.54);
+    text-decoration: none;
+  }
+  a:hover {
+    color:#00a57c;
+    text-decoration: none;
+  }
+  a:active {
+    color: rgba(0, 0, 0, 0.54);
+    text-decoration: none;
+  } 
+
+  .cap-content {
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+    font-size: 10pt;
+    color: #333;
+ }
