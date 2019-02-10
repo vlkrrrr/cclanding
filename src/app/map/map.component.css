@@ -21,22 +21,7 @@
       left: 50px;
   }
 
-  .overlay2 {
-    display: inline-block;
-    color: transparent;
-    text-align: center;
-    vertical-align: middle;
-    padding: 5px;
-    font-size:24px;
-    font-weight: 700;
-    border-radius: 50%;
-    position: absolute;
-    bottom: 300px;
-    left: 150px;
-    height: 25px;
-    width: 25px;
-    display: table-cell;
-  }
+
   .overlay3 {
     display: inline-block;
     color: rgba(0, 0, 0, 0.54);
@@ -46,5 +31,47 @@
     position: absolute;
     bottom: 30px;
     left: 300px;
+}
+
+.labelbase {
+  display: inline-block;
+  color: transparent;
+  position: absolute;
+}
+.s1label {
+  bottom: 220px;
+  left: 230px;
+}
+.s2label {
+  bottom: 330px;
+  left: 270px;
+}
+.s3label {
+  bottom: 360px;
+  left: 340px;  
+}
+.s4label {
+  bottom: 420px;
+  left: 368px;
+}
+.s5label {
+  bottom: 480px;
+  left: 445px;
+}
+.s6label {
+  bottom: 480px;
+  left: 520px;
+}
+.s7label {
+  bottom: 480px;
+  left: 575px;
+}
+.s8label {
+  bottom: 480px;
+  left: 625px;
+}
+.s9label {
+  bottom: 450px;
+  left: 730px;
 }
 
