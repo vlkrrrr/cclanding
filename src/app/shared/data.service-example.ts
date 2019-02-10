@@ -1,7 +1,8 @@
 import { Injectable } from '@angular/core';
 import { Shop } from './shop';
-
+//
 // remove -example from filename
+//
 class BaseData {
   welcome = 'CADDELN ◆ CAFFÉ';
   impTel =  '23423';
