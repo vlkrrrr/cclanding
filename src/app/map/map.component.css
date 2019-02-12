@@ -10,27 +10,44 @@
       width: 1024px;
   }
   
-  .overlay {
+  .zufahrt2 {
       display: inline-block;
-      color: rgba(0, 0, 0, 0.54);
+      color:rgb(0, 165, 124);
       background-color: white;
       padding: 5px;
-      border-radius: 5%;
+/* '      border-radius: 3%; 
+      border-style: solid;
+      border-width: 1px;' */
       position: absolute;
-      bottom: 38px;
-      left: 50px;
+      bottom: 45px;
+      left: 120px;
   }
 
 
-  .overlay3 {
+  .zufahrt1 {
     display: inline-block;
-    color: rgba(0, 0, 0, 0.54);
+    color: rgb(0, 165, 124);
     background-color: white;
     padding: 5px;
-    border-radius: 5%;
+    /* border-radius: 3%; 
+    border-style: solid;
+    border-width: 1px; */
     position: absolute;
-    bottom: 30px;
-    left: 300px;
+    bottom: 0px;
+    left: 450px;
+}
+
+.busstop {
+  display: inline-block;
+  color: rgb(0, 165, 124);
+  background-color: white;
+  padding: 5px;
+  /* border-radius: 3%; 
+  border-style: solid;
+  border-width: 1px; */
+  position: absolute;
+  bottom: 0px;
+  left: 710px;
 }
 
 .labelbase {
