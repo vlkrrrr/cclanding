@@ -1,43 +1,30 @@
 .map-card {
-    /* max-width: 900px; */
-  }
-
-  .img-container {
-    position: relative;
-  }
-  
-  img {
-      width: 1024px;
-  }
-  
-  .zufahrt2 {
-      display: inline-block;
-      color:rgb(0, 165, 124);
-      background-color: white;
-      padding: 5px;
-/* '      border-radius: 3%; 
-      border-style: solid;
-      border-width: 1px;' */
-      position: absolute;
-      bottom: 45px;
-      left: 120px;
-  }
-
-
-  .zufahrt1 {
-    display: inline-block;
-    color: rgb(0, 165, 124);
-    background-color: white;
-    padding: 5px;
-    /* border-radius: 3%; 
-    border-style: solid;
-    border-width: 1px; */
-    position: absolute;
-    bottom: 0px;
-    left: 450px;
+  /* max-width: 900px; */
 }
 
-.busstop {
+.img-container {
+  position: relative;
+}
+
+img {
+    width: 1024px;
+}
+
+.zufahrt2 {
+    display: inline-block;
+    color:rgb(0, 165, 124);
+    background-color: white;
+    padding: 5px;
+/* '      border-radius: 3%; 
+    border-style: solid;
+    border-width: 1px;' */
+    position: absolute;
+    bottom: 45px;
+    left: 120px;
+}
+
+
+.zufahrt1 {
   display: inline-block;
   color: rgb(0, 165, 124);
   background-color: white;
@@ -47,48 +34,120 @@
   border-width: 1px; */
   position: absolute;
   bottom: 0px;
-  left: 710px;
+  left: 450px;
+}
+
+.busstop {
+display: inline-block;
+color: rgb(0, 165, 124);
+background-color: white;
+padding: 5px;
+/* border-radius: 3%; 
+border-style: solid;
+border-width: 1px; */
+position: absolute;
+bottom: 0px;
+left: 710px;
 }
 
 .labelbase {
-  display: inline-block;
-  color: transparent;
-  position: absolute;
+display: inline-block;
+color: transparent;
+position: absolute;
+}
+.smooverbase {
+position: absolute;
+/* background-color:blue; */
+background-color: transparent;
+width: 60px;
+height: 60px;
+opacity: 0.5;
+}
+
+.labeltext {
+position: absolute;
+font-size:20px;
+font-weight: 700;
+color:#fafafa;
+z-index: 5; 
+}
+.labelbg{
+background-color:#00a57c;
+
 }
 .s1label {
-  bottom: 220px;
-  left: 230px;
+bottom: 200px;
+left: 230px;
+}
+.s1mover {
+bottom: 185px;
+left: 200px;
 }
 .s2label {
-  bottom: 330px;
-  left: 270px;
+bottom: 300px;
+left: 270px;
+}
+.s2mover {
+bottom:285px;
+left: 240px;
 }
 .s3label {
-  bottom: 360px;
-  left: 340px;  
+bottom: 350px;
+left: 335px;  
+}
+.s3mover {
+height: 55px;
+bottom: 345px;
+left: 305px;  
+opacity: 0.5;
+
 }
 .s4label {
-  bottom: 420px;
-  left: 368px;
+bottom: 385px;
+left: 380px;
+}
+.s4mover {
+bottom: 385px;
+left: 355px;
 }
 .s5label {
-  bottom: 480px;
-  left: 445px;
+bottom: 430px;
+left: 445px;
+}.s5mover {
+bottom: 415px;
+left: 420px; 
 }
 .s6label {
-  bottom: 480px;
-  left: 520px;
+  bottom: 430px;
+left: 520px;
+}.s6mover {
+  bottom: 415px;
+left: 485px;  
+
 }
 .s7label {
-  bottom: 480px;
-  left: 575px;
+  bottom: 430px;
+left: 575px;
+}.s7mover {
+width: 40px;
+bottom: 415px;
+left: 555px;  
 }
 .s8label {
-  bottom: 480px;
-  left: 625px;
+  bottom: 430px;
+left: 625px;
+}
+.s8mover {
+width: 50px;
+bottom: 415px;
+left: 600px; 
 }
 .s9label {
-  bottom: 450px;
-  left: 730px;
+bottom: 410px;
+left: 710px;
+}
+.s9mover {
+bottom: 395px;
+left: 680px;  
 }
 
