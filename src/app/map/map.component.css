@@ -7,7 +7,7 @@
 }
 
 img {
-    width: 1024px;
+    width: 100%;;
 }
 
 .zufahrt2 {
@@ -34,7 +34,7 @@ img {
   border-width: 1px; */
   position: absolute;
   bottom: 0px;
-  left: 450px;
+  left: 250px;
 }
 
 .busstop {
@@ -47,7 +47,7 @@ border-style: solid;
 border-width: 1px; */
 position: absolute;
 bottom: 0px;
-left: 710px;
+left: 510px;
 }
 
 .labelbase {
@@ -75,6 +75,24 @@ z-index: 5;
 background-color:#00a57c;
 
 }
+.smooverbase {
+  position: absolute;
+  background-color:transparent;
+  width: 60px;
+  height: 60px;
+  opacity: 0.5;
+}
+
+.labeltext {
+  font-size:20px;
+  font-weight: 700;
+  color:#fafafa;
+  z-index: 5; 
+}
+.labelbg{
+  background-color:#00a57c;
+
+}
 .s1label {
 bottom: 200px;
 left: 230px;
@@ -83,6 +101,10 @@ left: 230px;
 bottom: 185px;
 left: 200px;
 }
+.s1mover {
+  bottom: 205px;
+  left: 200px;
+}
 .s2label {
 bottom: 300px;
 left: 270px;
@@ -90,6 +112,10 @@ left: 270px;
 .s2mover {
 bottom:285px;
 left: 240px;
+}
+.s2mover {
+  bottom: 305px;
+  left: 240px;
 }
 .s3label {
 bottom: 350px;
@@ -102,6 +128,13 @@ left: 305px;
 opacity: 0.5;
 
 }
+.s3mover {
+  height: 55px;
+  bottom: 345px;
+  left: 310px;  
+  opacity: 0.5;
+
+}
 .s4label {
 bottom: 385px;
 left: 380px;
@@ -109,6 +142,10 @@ left: 380px;
 .s4mover {
 bottom: 385px;
 left: 355px;
+}
+.s4mover {
+  bottom: 405px;
+  left: 343px;
 }
 .s5label {
 bottom: 430px;
@@ -141,6 +178,11 @@ left: 625px;
 width: 50px;
 bottom: 415px;
 left: 600px; 
+}
+.s8mover {
+  width: 50px;
+  bottom: 415px;
+  left: 600px; 
 }
 .s9label {
 bottom: 410px;

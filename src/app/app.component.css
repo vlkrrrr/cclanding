@@ -1,45 +1,45 @@
 .title {
-    font-family: 'Open Sans',sans-serif;
-    font-weight: 800;
-    /* font-size: 50pt; */
-    font-style: normal; 
-    color: #d3150e;
-    letter-spacing: 3px;
-    margin:12px;
+  font-family: 'Open Sans',sans-serif;
+  font-weight: 800;
+  /* font-size: 50pt; */
+  font-style: normal; 
+  color: #d3150e;
+  letter-spacing: 3px;
+  margin:12px;
 }
 
-@media screen and (min-width: 1024px) {
-    .title {
-        font-size: 50pt;
-    }
+/* @media screen and (min-width: 1024px) {
+  .title {
+      font-size: 50pt;
   }
-  
-  /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
-  @media screen and (max-width: 1023px) {
-    .title {
-       font-size: 50pt;;
-    }
-  }
+}
 
-  a:link {
-    color:rgba(0, 0, 0, 0.54);
-    text-decoration: none;
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+/* @media screen and (max-width: 1023px) {
+  .title {
+     font-size: 50pt;;
   }
-  a:visited {
-    color: rgba(0, 0, 0, 0.54);
-    text-decoration: none;
-  }
-  a:hover {
-    color:#00a57c;
-    text-decoration: none;
-  }
-  a:active {
-    color: rgba(0, 0, 0, 0.54);
-    text-decoration: none;
-  } 
+} */ 
 
-  .cap-content {
-    font-family: Roboto, "Helvetica Neue", sans-serif;
-    font-size: 10pt;
-    color: #333;
- }
+a:link {
+  color:rgba(0, 0, 0, 0.54);
+  text-decoration: none;
+}
+a:visited {
+  color: rgba(0, 0, 0, 0.54);
+  text-decoration: none;
+}
+a:hover {
+  color:#00a57c;
+  text-decoration: none;
+}
+a:active {
+  color: rgba(0, 0, 0, 0.54);
+  text-decoration: none;
+} 
+
+.cap-content {
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  font-size: 10pt;
+  color: #333;
+}
