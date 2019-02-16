@@ -12,7 +12,8 @@ import {
   MatCardModule,
   MatDividerModule,
   MatBadgeModule,
-  MatIconModule
+  MatIconModule,
+  MatListModule
 } from '@angular/material';
 import { FlexLayoutModule } from '@angular/flex-layout';
 
@@ -32,13 +33,15 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     MatCardModule,
     MatDividerModule,
     MatBadgeModule,
-    MatIconModule
+    MatIconModule,
+    MatListModule
   ],
   exports: [
     MatButtonModule,
     MatCardModule,
     MatDividerModule,
     MatBadgeModule,
+    MatListModule
 
   ],
   providers: [],
