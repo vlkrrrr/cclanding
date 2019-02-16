@@ -7,8 +7,28 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <script type="text/javascript">
+    //window.global = window;
+     setTimeout(checkJS, 1);
+     function checkJS() {
+     document.getElementById('browserwarnung').style.display = 'none';
+     }
+     setTimeout(browserwarnung, 10000);
+     function browserwarnung() {
+          if (document.getElementsByTagName("app-root")[0].getAttribute("ng-version") == null){ 
+            document.getElementById('browserwarnung').style.display = 'block';
+         }   
+     }  
+  </script>
 </head>
 <body class="grey-background">
-  <app-root></app-root>
+  <app-root style="justify-content: center;align-items: center; align-content: center;"></app-root>
+  <div id='browserwarnung' style="display:block; text-align:center; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+      <div style="display: inline-block; width:600px; text-align:left; font-size:16px; color:#254b69;font-weight:500; border-color:#254b69; border-style: solid;border-width: 3px;padding: 5px;"><strong>Hinweis:</strong>
+        <br><br>
+        Die Website kann nicht korrekt angezeigt werden, da Javascript deaktiviert ist oder ihr Browser valtet ist. 
+        <br><br>
+        <div><a href="../assets/html/impressum.html">Impressum</a>/<a href="../assets/html/datenschutz.html">Datenschutzerklärung</a></div>
+    </div></div>
 </body>
 </html>
