@@ -1,6 +1,6 @@
-<div fxlayout="row" fxLayoutAlign="center">
+<!-- <div fxlayout="row" fxLayoutAlign="center"> -->
   <div fxLayout="column" fxLayoutAlign="start center" fxFlex="0 0 950px" fxFlex.lt-md="0 0 740px"
-    fxFlex.lt-sm="0 0 360px">
+    fxFlex.lt-sm="0 0 360px"> 
     <div >
       <h1 class="title">
         {{ dataService.baseData.welcome }}
@@ -9,24 +9,31 @@
     <div class="mat-app-background basic-container">
       <app-map fxFlex="0 0 740px" fxFlex.lt-sm="0 0 360px" ></app-map>
     </div>
-    <div style="height: 25px;"></div>
+
+    <div style="height: 20px;"></div>
     <div fxLayout="row wrap" fxLayoutGap="15px grid" fxLayoutAlign="center start" >
       <ng-container *ngFor="let shop of dataService.shops; let i = index"  >
         <app-biz [biz]="shop"></app-biz>
       </ng-container>
   </div>
-    <div fxLayout="row" fxLayoutAlign="center start">
-      <div class="cap-content" style="font-size:14px;color:rgba(0, 0, 0, 0.54);margin-top:10px;"><span style="font-weight:700">Adresse:</span>
+  <div fxHide.lt-sm  fxLayout="row" fxLayoutAlign="center start">
+    <div class="cap-content" style="font-size:14px;margin-top:10px;color:  rgba(0, 0, 0, 0.54);">
+      Hettinger Straße 9, 49432 Osterhausen</div>
+    <div style="font-size: 20px; margin-top:6px; color:  rgba(0, 0, 0, 0.54);">
+      <mat-icon [inline]="true">place</mat-icon>
+    </div>
+    <div class="cap-content" style="font-size:14px;margin-top:10px; color:  rgba(0, 0, 0, 0.54);"> <a href="https://www.google.com/maps?q=Alstercafé,+Ifflandstraße+45,+22087+Hamburg" target="_blank">Route
+        planen (Google Maps)</a></div>
+  </div>
+  <div fxHide  fxShow.lt-sm  fxLayout="column" fxLayoutAlign="start center">
+      <div class="cap-content" style="font-size:10px;color:rgba(0, 0, 0, 0.54);margin-top:10px;">
         Hettinger Straße 9, 49432 Osterhausen</div>
-      <div style="font-size: 20px; margin-top:10px; color:rgba(0, 0, 0, 0.54);">
-        <mat-icon [inline]="true">place</mat-icon>
-      </div>
-      <div class="cap-content" style="font-size:14px;color:rgba(0, 0, 0, 0.54);margin-top:10px;"> <a href="https://www.google.com/maps?q=Alstercafé,+Ifflandstraße+45,+22087+Hamburg">Route
+      <div class="cap-content" style="font-size:10px;color:rgba(0, 0, 0, 0.54);margin-top:0px;"><mat-icon [inline]="true" style="vertical-align: text-bottom;">place</mat-icon><a href="https://www.google.com/maps?q=Alstercafé,+Ifflandstraße+45,+22087+Hamburg" target="_blank">Route
           planen (Google Maps)</a></div>
     </div>
+  <div style="border-top-width: 1px; border-top-style: solid; border-top-color: rgba(184, 184, 184, 0.315);display:block; width:100%; margin-top:5px; margin-bottom: 5px;"></div>
     <div fxLayout="row" fxLayoutAlign="center start">
-       <mat-divider></mat-divider>
-      <div class="cap-content body-1"><a href="../assets/html/impressum.html">Impressum/Datenschutzerklärung</a></div>
+        <div  class="cap-content body-1"><a href="../assets/html/impressum.html">Impressum</a>/<a href="../assets/html/datenschutz.html">Datenschutzerklärung</a></div>
     </div>
-  </div>
-</div>{}
+  </div> 
+<!-- </div> -->
