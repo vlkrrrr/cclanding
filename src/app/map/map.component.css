@@ -1,45 +1,242 @@
-.title {
-  font-family: 'Open Sans',sans-serif;
-  font-weight: 800;
-  font-size: calc(5vh - 9px);
-  font-style: normal; 
-  color: #d3150e;
-  letter-spacing: 3px;
-  margin:12px;
+.map-card {
+  /* max-width: 900px; */
 }
 
-/* @media screen and (min-width: 1024px) {
-  .title {
-      font-size: 50pt;
-  }
+.img-container {
+  position: relative;
 }
 
-/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
-/* @media screen and (max-width: 1023px) {
-  .title {
-     font-size: 50pt;;
-  }
-} */ 
+img {
+    width: 100%;;
+}
 
-a:link {
-  color:rgba(0, 0, 0, 0.54);
-  text-decoration: none;
+.zufahrt2 {
+    display: inline-block;
+    color:rgb(0, 165, 124);
+    background-color:transparent;
+    padding: 5px;
+/* '      border-radius: 3%; 
+    border-style: solid;
+    border-width: 1px;' */
+    position: absolute;
+    bottom: 33px;
+    left: 25px;
 }
-a:visited {
-  color: rgba(0, 0, 0, 0.54);
-  text-decoration: none;
-}
-a:hover {
-  color:#00a57c;
-  text-decoration: none;
-}
-a:active {
-  color: rgba(0, 0, 0, 0.54);
-  text-decoration: none;
-} 
 
-.cap-content {
-  font-family: Roboto, "Helvetica Neue", sans-serif;
-  font-size: 10pt;
-  color: #333;
+
+.zufahrt1 {
+  display: inline-block;
+  color: rgb(0, 165, 124);
+  background-color:transparent;
+  padding: 5px;
+  /* border-radius: 3%; 
+  border-style: solid;
+  border-width: 1px; */
+  position: absolute;
+  bottom: 12px;
+  left: 310px;
+}
+
+.busstop {
+display: none;
+color: rgb(0, 165, 124);
+background-color:transparent;
+padding: 5px;
+/* border-radius: 3%; 
+border-style: solid;
+border-width: 1px; */
+position: absolute;
+bottom: 0px;
+left: 0px;
+}
+
+.labelbase {
+display: inline-block;
+color: transparent;
+position: absolute;
+}
+
+
+.labeltext {
+position: absolute;
+font-size:20px;
+font-weight: 700;
+color:#fafafa;
+z-index: 5; 
+}
+
+.smooverbase {
+  position: absolute;
+  background-color:transparent;
+  width: 40px;
+  height: 40px;
+  opacity: 0.5;
+}
+
+.labeltext {
+  font-size:20px;
+  font-weight: 700;
+  color:#fafafa;
+  z-index: 5; 
+}
+.labelbg{
+  background-color:#00a57c;
+
+}
+.s1label {
+  bottom: 140px;
+  left: 160px;
+}
+.s1mover {
+  bottom: 135px;
+  left: 140px;
+}
+.s2label {
+  bottom: 205px;
+  left: 190px;
+}
+.s2mover {
+  bottom: 200px;
+  left: 170px;
+}
+.s3label {
+  bottom: 235px;
+  left: 235px;
+}
+.s3mover {
+  height: 35px;
+  bottom: 230px;
+  left: 215px;
+}
+.s4label {
+  bottom: 257px;
+  left: 267px;
+}
+.s4mover {
+  height: 35px;
+  width: 35px;
+  bottom: 255px;
+  left: 252px;
+}
+
+.s5label {
+  bottom: 290px;
+  left: 310px;
+}.s5mover {
+  bottom: 290px;
+  left: 290px;
+}
+.s6label {
+  bottom: 290px;
+left: 357px;
+}.s6mover {
+  bottom: 290px;
+  left: 335px;
+}
+.s7label {
+  bottom: 290px;
+left: 399px;
+}.s7mover {
+  width: 35px;
+  bottom: 290px;
+  left: 380px;
+}
+.s8label {
+  bottom: 290px;
+left: 433px;
+}
+.s8mover {
+  width: 35px;
+  bottom: 290px;
+  left: 416px;
+}
+.s9label {
+  bottom: 282px;
+  left: 495px;
+}
+.s9mover {
+  bottom: 280px;
+  left: 475px;
+}
+
+/* small labels */
+
+.smooverbase-sm {
+  position: absolute;
+  background-color:transparent;
+  width: 25px;
+  height: 25px;
+  opacity: 0.5;
+}
+
+.s1label-sm {
+  bottom: 57px;
+  left: 70px;
+}
+.s1mover-sm {
+  bottom: 61px;
+  left: 58px
+}
+.s2label-sm {
+  bottom: 85px;
+  left: 86px;
+}
+.s2mover-sm {
+  bottom: 88px;
+  left: 75px;
+}
+.s3label-sm {
+  bottom: 105px;
+  left: 107px;
+}
+.s3mover-sm {
+  height: 18px;
+  bottom: 110px;
+  left: 95px;
+}
+.s4label-sm {
+  bottom: 127px;
+  left: 116px;
+}
+.s4mover-sm {
+  bottom: 130px;
+  left: 103px;
+}
+
+.s5label-sm {
+  bottom: 130px;
+  left: 142px;
+}.s5mover-sm {
+  bottom: 132px;
+  left: 129px
+}
+.s6label-sm {
+  bottom: 130px;
+  left: 165px;;
+}.s6mover-sm {
+  bottom: 134px;
+  left: 155px;
+}
+.s7label-sm {
+  bottom: 150px;
+  left: 185px;
+}.s7mover-sm {
+  bottom: 155px;
+  left: 173px;
+}
+.s8label-sm {
+  bottom: 130px;
+  left: 202px;
+}
+.s8mover-sm {
+  bottom: 132px;
+  left: 192px;
+}
+.s9label-sm {
+  bottom: 95px;
+  left: 232px;
+}
+.s9mover-sm {
+  bottom: 130px;
+  left: 220px;
 }
