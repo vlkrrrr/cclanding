@@ -1,16 +1,16 @@
 <mat-card class="example-card" fxLayout="row" fxLayoutAlign="center center">
     <mat-card-content >
         <div class="img-container">
-            <img src="../../assets/img/websitemap2small.png" alt="Übersichtskarte">
+            <img src="../../assets/img/websitemap2smalla.png" alt="Übersichtskarte">
 
 
     
-            <div class="zufahrt1">
+            <div fxHide.lt-sm class="zufahrt1">
                 <div style="text-align: justify;font-size: 17px;    font-weight: 700;">Zufahrt 1:<br>über Heerstraße<br>(Aldi/K+K/Edeka)</div>
                 <div style="font-size:25px; text-align: justify">
                 <mat-icon [inline]="true">directions_bike</mat-icon><mat-icon [inline]="true">directions_car</mat-icon><mat-icon [inline]="true">arrow_upward</mat-icon></div>
             </div>
-            <div class="zufahrt2">
+            <div fxHide.lt-sm class="zufahrt2">
                     <div style="text-align: justify;font-size: 17px;    font-weight: 700;
                 ">Zufahrt 2:<br>über Hettinger Straße</div>
                 <div style="font-size:25px; text-align: justify"><mat-icon [inline]="true">directions_bike</mat-icon><mat-icon [inline]="true">directions_car</mat-icon><mat-icon [inline]="true">arrow_forward</mat-icon></div>
@@ -18,41 +18,67 @@
                 <!-- <mat-icon [inline]="true">directions_bike</mat-icon><mat-icon [inline]="true">directions_car</mat-icon><mat-icon [inline]="true">arrow_forward</mat-icon></div> -->
                 <!-- todo bus stop -->
             </div>
-            <div class="busstop">
+            <div fxHide.lt-sm class="busstop">
                 <div style="text-align: justify;font-size: 17px;    font-weight: 700;">Bushaltestelle:<br>blablub</div>
                 <div style="font-size:25px; text-align: justify">
                <mat-icon [inline]="true">directions_bus</mat-icon></div>
 
             </div>
-            <div class="s1label labelbase" matBadge="1" matBadgePosition="before" matBadgeSize="large" (mouseenter) ="mouseEnter('1') "  (mouseleave) ="mouseLeave('1')" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span [class.labelbg]="1 == activeShop" [class.labeltext]="1 == activeShop">&nbsp;{{dataService.shops[0].name}}&nbsp;</span>
+            <div fxHide.lt-sm  class="s1label labelbase" matBadge="1" matBadgePosition="before" matBadgeSize="large" (mouseenter) ="mouseEnter('1') "  (mouseleave) ="mouseLeave('1')" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span [class.labelbg]="1 == activeShop" [class.labeltext]="1 == activeShop">&nbsp;{{dataService.shops[0].name}}&nbsp;</span>
             </div>
-            <div class="s1mover smooverbase"  (mouseenter) ="mouseEnter('1') "  (mouseleave) ="mouseLeave('1')" (tap)="mouseEnter('1')"></div>
-            <div class="s2label labelbase" matBadge="2" matBadgePosition="before" matBadgeSize="large"  (mouseenter) ="mouseEnter('2') "  (mouseleave) ="mouseLeave('2')" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span [class.labelbg]="2 == activeShop" [class.labeltext]="2 == activeShop">&nbsp;{{dataService.shops[1].name}}&nbsp;</span>
+            <div fxHide.lt-sm class="s1mover smooverbase"  (mouseenter) ="mouseEnter('1') "  (mouseleave) ="mouseLeave('1')" (tap)="mouseEnter('1')"></div>
+            <div  fxHide.lt-sm class="s2label labelbase" matBadge="2" matBadgePosition="before" matBadgeSize="large"  (mouseenter) ="mouseEnter('2') "  (mouseleave) ="mouseLeave('2')" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span [class.labelbg]="2 == activeShop" [class.labeltext]="2 == activeShop">&nbsp;{{dataService.shops[1].name}}&nbsp;</span>
             </div>
-            <div class="s2mover smooverbase"  (mouseenter) ="mouseEnter('2') "  (mouseleave) ="mouseLeave('2')" (tap)="mouseEnter('2')"></div>
-            <div class="s3label labelbase" matBadge="3" matBadgePosition="before" matBadgeSize="large"  (mouseenter) ="mouseEnter('3') "  (mouseleave) ="mouseLeave('3')" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span [class.labelbg]="3 == activeShop" [class.labeltext]="3 == activeShop">&nbsp;{{dataService.shops[2].name}}&nbsp;</span>
+            <div fxHide.lt-sm class="s2mover smooverbase"  (mouseenter) ="mouseEnter('2') "  (mouseleave) ="mouseLeave('2')" (tap)="mouseEnter('2')"></div>
+            <div fxHide.lt-sm class="s3label labelbase" matBadge="3" matBadgePosition="before" matBadgeSize="large"  (mouseenter) ="mouseEnter('3') "  (mouseleave) ="mouseLeave('3')" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span [class.labelbg]="3 == activeShop" [class.labeltext]="3 == activeShop">&nbsp;{{dataService.shops[2].name}}&nbsp;</span>
             </div>
-            <div class="s3mover smooverbase"  (mouseenter) ="mouseEnter('3') "  (mouseleave) ="mouseLeave('3')" (tap)="mouseEnter('3')"></div>
-            <div class="s4label labelbase" matBadge="4" matBadgePosition="before" matBadgeSize="large" (mouseenter) ="mouseEnter('4') "  (mouseleave) ="mouseLeave('4')" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span [class.labelbg]="4 == activeShop" [class.labeltext]="4 == activeShop">&nbsp;{{dataService.shops[3].name}}&nbsp;</span>
+            <div fxHide.lt-sm class="s3mover smooverbase"  (mouseenter) ="mouseEnter('3') "  (mouseleave) ="mouseLeave('3')" (tap)="mouseEnter('3')"></div>
+            <div fxHide.lt-sm class="s4label labelbase" matBadge="4" matBadgePosition="before" matBadgeSize="large" (mouseenter) ="mouseEnter('4') "  (mouseleave) ="mouseLeave('4')" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span [class.labelbg]="4 == activeShop" [class.labeltext]="4 == activeShop">&nbsp;{{dataService.shops[3].name}}&nbsp;</span>
             </div>            
-            <div class="s4mover smooverbase"  (mouseenter) ="mouseEnter('4') "  (mouseleave) ="mouseLeave('4')" (tap)="mouseEnter('4')"></div>
-            <div class="s5label labelbase" matBadge="5" matBadgePosition="before" matBadgeSize="large" (mouseenter) ="mouseEnter('5') "  (mouseleave) ="mouseLeave('5')" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span [class.labelbg]="5 == activeShop" [class.labeltext]="5 == activeShop">&nbsp;{{dataService.shops[4].name}}&nbsp;</span>
+            <div fxHide.lt-sm class="s4mover smooverbase"  (mouseenter) ="mouseEnter('4') "  (mouseleave) ="mouseLeave('4')" (tap)="mouseEnter('4')"></div>
+            <div fxHide.lt-sm class="s5label labelbase" matBadge="5" matBadgePosition="before" matBadgeSize="large" (mouseenter) ="mouseEnter('5') "  (mouseleave) ="mouseLeave('5')" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span [class.labelbg]="5 == activeShop" [class.labeltext]="5 == activeShop">&nbsp;{{dataService.shops[4].name}}&nbsp;</span>
             </div>            
-            <div class="s5mover smooverbase"  (mouseenter) ="mouseEnter('5') "  (mouseleave) ="mouseLeave('5')" (tap)="mouseEnter('5')"></div>
-            <div class="s6label labelbase" matBadge="6" matBadgePosition="before" matBadgeSize="large" (mouseenter) ="mouseEnter('6') "  (mouseleave) ="mouseLeave('6')">&nbsp;&nbsp;&nbsp;&nbsp;<span [class.labelbg]="6 == activeShop" [class.labeltext]="6 == activeShop">&nbsp;{{dataService.shops[5].name}}&nbsp;</span>
+            <div fxHide.lt-sm class="s5mover smooverbase"  (mouseenter) ="mouseEnter('5') "  (mouseleave) ="mouseLeave('5')" (tap)="mouseEnter('5')"></div>
+            <div fxHide.lt-sm class="s6label labelbase" matBadge="6" matBadgePosition="before" matBadgeSize="large" (mouseenter) ="mouseEnter('6') "  (mouseleave) ="mouseLeave('6')">&nbsp;&nbsp;&nbsp;&nbsp;<span [class.labelbg]="6 == activeShop" [class.labeltext]="6 == activeShop">&nbsp;{{dataService.shops[5].name}}&nbsp;</span>
             </div>           
-            <div class="s6mover smooverbase"  (mouseenter) ="mouseEnter('6') "  (mouseleave) ="mouseLeave('6')" (tap)="mouseEnter('6')"></div>
-            <div class="s7label labelbase" matBadge="7" matBadgePosition="before" matBadgeSize="large" (mouseenter) ="mouseEnter('7') "  (mouseleave) ="mouseLeave('7')">&nbsp;&nbsp;&nbsp;&nbsp;<span [class.labelbg]="7 == activeShop" [class.labeltext]="7 == activeShop">&nbsp;{{dataService.shops[6].name}}&nbsp;</span>
+            <div fxHide.lt-sm class="s6mover smooverbase"  (mouseenter) ="mouseEnter('6') "  (mouseleave) ="mouseLeave('6')" (tap)="mouseEnter('6')"></div>
+            <div fxHide.lt-sm class="s7label labelbase" matBadge="7" matBadgePosition="before" matBadgeSize="large" (mouseenter) ="mouseEnter('7') "  (mouseleave) ="mouseLeave('7')">&nbsp;&nbsp;&nbsp;&nbsp;<span [class.labelbg]="7 == activeShop" [class.labeltext]="7 == activeShop">&nbsp;{{dataService.shops[6].name}}&nbsp;</span>
             </div>            
-            <div class="s7mover smooverbase"  (mouseenter) ="mouseEnter('7') "  (mouseleave) ="mouseLeave('7')" (tap)="mouseEnter('7')"></div>
-            <div class="s8label labelbase" matBadge="8" matBadgePosition="before" matBadgeSize="large"  (mouseenter) ="mouseEnter('8') "  (mouseleave) ="mouseLeave('8')" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span [class.labelbg]="8 == activeShop" [class.labeltext]="8 == activeShop" >&nbsp;{{dataService.shops[7].name}}&nbsp;</span>
+            <div fxHide.lt-sm class="s7mover smooverbase"  (mouseenter) ="mouseEnter('7') "  (mouseleave) ="mouseLeave('7')" (tap)="mouseEnter('7')"></div>
+            <div fxHide.lt-sm class="s8label labelbase" matBadge="8" matBadgePosition="before" matBadgeSize="large"  (mouseenter) ="mouseEnter('8') "  (mouseleave) ="mouseLeave('8')" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span [class.labelbg]="8 == activeShop" [class.labeltext]="8 == activeShop" >&nbsp;{{dataService.shops[7].name}}&nbsp;</span>
             </div>            
-            <div class="s8mover smooverbase"  (mouseenter) ="mouseEnter('8') "  (mouseleave) ="mouseLeave('8')" (tap)="mouseEnter('8')"></div>
-            <div class="s9label labelbase" matBadge="9" matBadgePosition="before" matBadgeSize="large"  (mouseenter)="mouseEnter('9') "  (mouseleave) ="mouseLeave('9')">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span [class.labelbg]="9 == activeShop"  [class.labeltext]="9 == activeShop" >&nbsp;{{dataService.shops[8].name}}&nbsp;</span>
+            <div fxHide.lt-sm class="s8mover smooverbase"  (mouseenter) ="mouseEnter('8') "  (mouseleave) ="mouseLeave('8')" (tap)="mouseEnter('8')"></div>
+            <div fxHide.lt-sm class="s9label labelbase" matBadge="9" matBadgePosition="before" matBadgeSize="large"  (mouseenter)="mouseEnter('9') "  (mouseleave) ="mouseLeave('9')">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span [class.labelbg]="9 == activeShop"  [class.labeltext]="9 == activeShop" >&nbsp;{{dataService.shops[8].name}}&nbsp;</span>
             </div>  
-            <div class="s9mover smooverbase"  (mouseenter) ="mouseEnter('9')" (tap)="mouseEnter('9')" (mouseleave) ="mouseLeave('9')"></div>
-
-
+            <div fxHide.lt-sm class="s9mover smooverbase"  (mouseenter) ="mouseEnter('9')" (tap)="mouseEnter('9')" (mouseleave) ="mouseLeave('9')"></div>
+            <!-- small labels -->
+            <div fxHide fxShow.lt-sm  class="s1label-sm labelbase" matBadge="1" matBadgePosition="before" matBadgeSize="medium" (mouseenter) ="mouseEnter('1') "  (mouseleave) ="mouseLeave('1')" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span [class.labelbg]="1 == activeShop" [class.labeltext]="1 == activeShop">&nbsp;{{dataService.shops[0].name}}&nbsp;</span>
+            </div>
+            <div fxHide fxShow.lt-sm class="s1mover-sm smooverbase-sm"  (mouseenter) ="mouseEnter('1') "  (mouseleave) ="mouseLeave('1')" (tap)="mouseEnter('1')"></div>
+            <div  fxHide fxShow.lt-sm class="s2label-sm labelbase" matBadge="2" matBadgePosition="before" matBadgeSize="medium"  (mouseenter) ="mouseEnter('2') "  (mouseleave) ="mouseLeave('2')" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span [class.labelbg]="2 == activeShop" [class.labeltext]="2 == activeShop">&nbsp;{{dataService.shops[1].name}}&nbsp;</span>
+            </div>
+            <div fxHide fxShow.lt-sm class="s2mover-sm smooverbase-sm"  (mouseenter) ="mouseEnter('2') "  (mouseleave) ="mouseLeave('2')" (tap)="mouseEnter('2')"></div>
+            <div fxHide fxShow.lt-sm class="s3label-sm labelbase" matBadge="3" matBadgePosition="before" matBadgeSize="medium"  (mouseenter) ="mouseEnter('3') "  (mouseleave) ="mouseLeave('3')" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span [class.labelbg]="3 == activeShop" [class.labeltext]="3 == activeShop">&nbsp;{{dataService.shops[2].name}}&nbsp;</span>
+            </div>
+            <div fxHide fxShow.lt-sm class="s3mover-sm smooverbase-sm"  (mouseenter) ="mouseEnter('3') "  (mouseleave) ="mouseLeave('3')" (tap)="mouseEnter('3')"></div>
+            <div fxHide fxShow.lt-sm class="s4label-sm labelbase" matBadge="4" matBadgePosition="before" matBadgeSize="medium" (mouseenter) ="mouseEnter('4') "  (mouseleave) ="mouseLeave('4')" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span [class.labelbg]="4 == activeShop" [class.labeltext]="4 == activeShop">&nbsp;{{dataService.shops[3].name}}&nbsp;</span>
+            </div>            
+            <div fxHide fxShow.lt-sm class="s4mover-sm smooverbase-sm"  (mouseenter) ="mouseEnter('4') "  (mouseleave) ="mouseLeave('4')" (tap)="mouseEnter('4')"></div>
+            <div fxHide fxShow.lt-sm class="s5label-sm labelbase" matBadge="5" matBadgePosition="before" matBadgeSize="medium" (mouseenter) ="mouseEnter('5') "  (mouseleave) ="mouseLeave('5')" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span [class.labelbg]="5 == activeShop" [class.labeltext]="5 == activeShop">&nbsp;{{dataService.shops[4].name}}&nbsp;</span>
+            </div>            
+            <div fxHide fxShow.lt-sm class="s5mover-sm smooverbase-sm"  (mouseenter) ="mouseEnter('5') "  (mouseleave) ="mouseLeave('5')" (tap)="mouseEnter('5')"></div>
+            <div fxHide fxShow.lt-sm class="s6label-sm labelbase" matBadge="6" matBadgePosition="before" matBadgeSize="medium" (mouseenter) ="mouseEnter('6') "  (mouseleave) ="mouseLeave('6')">&nbsp;&nbsp;&nbsp;&nbsp;<span [class.labelbg]="6 == activeShop" [class.labeltext]="6 == activeShop">&nbsp;{{dataService.shops[5].name}}&nbsp;</span>
+            </div>           
+            <div fxHide fxShow.lt-sm class="s6mover-sm smooverbase-sm"  (mouseenter) ="mouseEnter('6') "  (mouseleave) ="mouseLeave('6')" (tap)="mouseEnter('6')"></div>
+            <div fxHide fxShow.lt-sm class="s7label-sm labelbase" matBadge="7" matBadgePosition="before" matBadgeSize="medium" (mouseenter) ="mouseEnter('7') "  (mouseleave) ="mouseLeave('7')">&nbsp;&nbsp;&nbsp;&nbsp;<span [class.labelbg]="7 == activeShop" [class.labeltext]="7 == activeShop">&nbsp;{{dataService.shops[6].name}}&nbsp;</span>
+            </div>            
+            <div fxHide fxShow.lt-sm class="s7mover-sm smooverbase-sm"  (mouseenter) ="mouseEnter('7') "  (mouseleave) ="mouseLeave('7')" (tap)="mouseEnter('7')"></div>
+            <div fxHide fxShow.lt-sm class="s8label-sm labelbase" matBadge="8" matBadgePosition="before" matBadgeSize="medium"  (mouseenter) ="mouseEnter('8') "  (mouseleave) ="mouseLeave('8')" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span [class.labelbg]="8 == activeShop" [class.labeltext]="8 == activeShop" >&nbsp;{{dataService.shops[7].name}}&nbsp;</span>
+            </div>            
+            <div fxHide fxShow.lt-sm class="s8mover-sm smooverbase-sm"  (mouseenter) ="mouseEnter('8') "  (mouseleave) ="mouseLeave('8')" (tap)="mouseEnter('8')"></div>
+            <div fxHide fxShow.lt-sm class="s9label-sm labelbase" matBadge="9" matBadgePosition="before" matBadgeSize="medium"  (mouseenter)="mouseEnter('9') "  (mouseleave) ="mouseLeave('9')">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span [class.labelbg]="9 == activeShop"  [class.labeltext]="9 == activeShop" >&nbsp;{{dataService.shops[8].name}}&nbsp;</span>
+            </div>  
+            <div fxHide fxShow.lt-sm class="s9mover-sm smooverbase-sm"  (mouseenter) ="mouseEnter('9')" (tap)="mouseEnter('9')" (mouseleave) ="mouseLeave('9')"></div>
         </div>
       
     </mat-card-content>
