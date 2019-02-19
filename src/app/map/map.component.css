@@ -23,6 +23,24 @@ img {
     left: 25px;
 }
 
+.zufahrt2-sm {
+  display: inline-block;
+  color:rgb(0, 165, 124);
+  background-color:transparent;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+}
+
+.zufahrt1-sm {
+  display: inline-block;
+  color: rgb(0, 165, 124);
+  background-color:transparent;
+  position: absolute;
+  bottom: 0px;
+  left: 140px;
+  font-size: 12px;
+}
 
 .zufahrt1 {
   display: inline-block;
@@ -80,7 +98,7 @@ z-index: 5;
   z-index: 5; 
 }
 .labelbg{
-  background-color:#00a57c;
+  background-color:#009fe3;
 
 }
 .s1label {
@@ -178,12 +196,12 @@ left: 433px;
   left: 58px
 }
 .s2label-sm {
-  bottom: 85px;
-  left: 86px;
+  bottom: 95px;
+  left: 83px;
 }
 .s2mover-sm {
-  bottom: 88px;
-  left: 75px;
+  bottom: 98px;
+  left: 70px;
 }
 .s3label-sm {
   bottom: 105px;
@@ -233,7 +251,7 @@ left: 433px;
   left: 192px;
 }
 .s9label-sm {
-  bottom: 95px;
+  bottom: 125px;
   left: 232px;
 }
 .s9mover-sm {
