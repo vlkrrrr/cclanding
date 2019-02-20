@@ -9,7 +9,7 @@ import { DataService } from '../shared/data.service';
 export class MapComponent implements OnInit {
   activeShop = 0;
 
-  constructor(private dataService: DataService ) { }
+  constructor(public dataService: DataService ) { }
 
   ngOnInit() {
   }

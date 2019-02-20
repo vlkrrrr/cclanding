@@ -1,5 +1,5 @@
 export class Shop {
-    public id: string; // alphabetical a-z
+    public id: number; 
     public name: string;
     public type: string; //type of shop
     public tel: string;
