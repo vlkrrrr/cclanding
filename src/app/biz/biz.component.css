@@ -5,6 +5,12 @@
 .mat-card {
   color:#00a57c;
 }
+ 
+.mat-card-avatar {
+  font-size: 40px;
+}
+
+
 .cap-card-content {
     font-size: 10pt;
     color: #333;
@@ -21,6 +27,10 @@
    margin-bottom: 5;
    margin-top: 0;
  }
+
+.cap-bizlogo {
+  height: 45px;
+}
 
 
 a:link {
