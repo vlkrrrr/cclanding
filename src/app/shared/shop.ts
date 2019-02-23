@@ -9,4 +9,6 @@ export class Shop {
     public openhours: string;
     public note: string;
     public symbol: string;
+    public showlogo: boolean;
+    public logopath: string;
 }
