@@ -3,21 +3,21 @@
         <div class="img-container">
             <img src="../../assets/img/websitemap2smalla.png" alt="Übersichtskarte">   
             <div fxHide.lt-sm class="zufahrt1">
-                <div class="zufahrt-text">Zufahrt 1:<br>über Heerstraße<br>(Aldi/K+K/Edeka)</div>
+                <div class="zufahrt-text" [innerHTML]="dataService.baseData.zufahrt1"></div>
                 <div class="zufahrt-logos">
                 <mat-icon [inline]="true">directions_bike</mat-icon><mat-icon [inline]="true">directions_car</mat-icon><mat-icon [inline]="true">arrow_upward</mat-icon></div>
             </div>
             <div fxHide.lt-sm class="zufahrt2">
-                    <div class="zufahrt-text">Zufahrt 2:<br>über Hettinger Straße</div>
+                    <div class="zufahrt-text" [innerHTML]="dataService.baseData.zufahrt2"></div>
                 <div class="zufahrt-logos"><mat-icon [inline]="true">directions_bike</mat-icon><mat-icon [inline]="true">directions_car</mat-icon><mat-icon [inline]="true">arrow_forward</mat-icon></div>
             </div>
             <div fxHide fxShow.lt-sm class="zufahrt1-sm">
-                <div class="zufahrt-text-sm">Zufahrt 1:<br>über Heerstraße<br>(Aldi/K+K/Edeka)</div>
+                <div class="zufahrt-text-sm" [innerHTML]="dataService.baseData.zufahrt1"></div>
                 <div class="zufahrt-logos-sm">
                 <mat-icon [inline]="true">directions_bike</mat-icon><mat-icon [inline]="true">directions_car</mat-icon><mat-icon [inline]="true">arrow_upward</mat-icon></div>
             </div>
             <div fxHide fxShow.lt-sm class="zufahrt2-sm">
-                    <div class="zufahrt-text-sm">Zufahrt 2:<br>über Hettinger Straße</div>
+                    <div class="zufahrt-text-sm" [innerHTML]="dataService.baseData.zufahrt2"></div>
                 <div class="zufahrt-logos-sm"><mat-icon [inline]="true">directions_bike</mat-icon><mat-icon [inline]="true">directions_car</mat-icon><mat-icon [inline]="true">arrow_forward</mat-icon></div>
             </div>
             <div fxHide.lt-sm class="busstop">
