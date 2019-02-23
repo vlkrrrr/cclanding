@@ -43,3 +43,13 @@ a:active {
   font-size: 10pt;
   color: #333;
 }
+
+.cap-divider {
+  border-top-width: 1px; 
+  border-top-style: solid; 
+  border-top-color: rgba(184, 184, 184, 0.315);
+  display:block; 
+  width:100%; 
+  margin-top:5px; 
+  margin-bottom: 5px;
+}
