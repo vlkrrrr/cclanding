@@ -26,7 +26,7 @@
   </div>
   <div fxHide  fxShow.lt-sm  fxLayout="column" fxLayoutAlign="start center">
       <div class="cap-content cap-addr-sm">
-        Hettinger Straße 9, 49432 Osterhausen</div>
+        {{dataService.baseData.address}}</div>
       <div class="cap-content cap-addr-icon-sm" ><mat-icon [inline]="true">place</mat-icon><a [href]="dataService.baseData.googlemaps" target="_blank">Route
           planen (Google Maps)</a></div>
     </div>
