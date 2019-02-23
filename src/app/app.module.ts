@@ -4,7 +4,6 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BizComponent } from './biz/biz.component';
-import { ImpressumComponent } from './impressum/impressum.component';
 import { MapComponent } from './map/map.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {
@@ -21,7 +20,6 @@ import { FlexLayoutModule } from '@angular/flex-layout';
   declarations: [
     AppComponent,
     BizComponent,
-    ImpressumComponent,
     MapComponent
   ],
   imports: [
