@@ -124,13 +124,6 @@ position: absolute;
 }
 
 
-.labeltext {
-position: absolute;
-font-size:20px;
-font-weight: 700;
-color:#fafafa;
-z-index: 5; 
-}
 
 .smooverbase {
   position: absolute;
@@ -141,8 +134,10 @@ z-index: 5;
 }
 
 .labeltext {
+  position: absolute;
   font-size:20px;
   font-weight: 700;
+  padding: 5px;
   color:#fafafa;
   z-index: 5; 
 }
