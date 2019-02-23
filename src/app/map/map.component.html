@@ -1,49 +1,37 @@
 <mat-card class="example-card" fxLayout="row" fxLayoutAlign="center center">
     <mat-card-content >
         <div class="img-container">
-            <img src="../../assets/img/websitemap2smalla.png" alt="Übersichtskarte">
-
-
-    
+            <img src="../../assets/img/websitemap2smalla.png" alt="Übersichtskarte">   
             <div fxHide.lt-sm class="zufahrt1">
-                <div style="text-align: justify;font-size: 17px;    font-weight: 700;">Zufahrt 1:<br>über Heerstraße<br>(Aldi/K+K/Edeka)</div>
-                <div style="font-size:25px; text-align: justify">
+                <div class="zufahrt-text">Zufahrt 1:<br>über Heerstraße<br>(Aldi/K+K/Edeka)</div>
+                <div class="zufahrt-logos">
                 <mat-icon [inline]="true">directions_bike</mat-icon><mat-icon [inline]="true">directions_car</mat-icon><mat-icon [inline]="true">arrow_upward</mat-icon></div>
             </div>
             <div fxHide.lt-sm class="zufahrt2">
-                    <div style="text-align: justify;font-size: 17px;    font-weight: 700;
-                ">Zufahrt 2:<br>über Hettinger Straße</div>
-                <div style="font-size:25px; text-align: justify"><mat-icon [inline]="true">directions_bike</mat-icon><mat-icon [inline]="true">directions_car</mat-icon><mat-icon [inline]="true">arrow_forward</mat-icon></div>
-                <!-- <div style="font-size:25px; text-align: justify"> -->
-                <!-- <mat-icon [inline]="true">directions_bike</mat-icon><mat-icon [inline]="true">directions_car</mat-icon><mat-icon [inline]="true">arrow_forward</mat-icon></div> -->
-                <!-- todo bus stop -->
+                    <div class="zufahrt-text">Zufahrt 2:<br>über Hettinger Straße</div>
+                <div class="zufahrt-logos"><mat-icon [inline]="true">directions_bike</mat-icon><mat-icon [inline]="true">directions_car</mat-icon><mat-icon [inline]="true">arrow_forward</mat-icon></div>
             </div>
             <div fxHide fxShow.lt-sm class="zufahrt1-sm">
-                <div style="text-align: justify;font-size: 12px;    font-weight: 700;">Zufahrt 1:<br>über Heerstraße<br>(Aldi/K+K/Edeka)</div>
-                <div style="font-size:15px; text-align: justify">
+                <div class="zufahrt-text-sm">Zufahrt 1:<br>über Heerstraße<br>(Aldi/K+K/Edeka)</div>
+                <div class="zufahrt-logos-sm">
                 <mat-icon [inline]="true">directions_bike</mat-icon><mat-icon [inline]="true">directions_car</mat-icon><mat-icon [inline]="true">arrow_upward</mat-icon></div>
             </div>
             <div fxHide fxShow.lt-sm class="zufahrt2-sm">
-                    <div style="text-align: justify;font-size: 12px;    font-weight: 700;
-                ">Zufahrt 2:<br>über Hettinger Straße</div>
-                <div style="font-size:15px; text-align: justify"><mat-icon [inline]="true">directions_bike</mat-icon><mat-icon [inline]="true">directions_car</mat-icon><mat-icon [inline]="true">arrow_forward</mat-icon></div>
-                <!-- <div style="font-size:25px; text-align: justify"> -->
-                <!-- <mat-icon [inline]="true">directions_bike</mat-icon><mat-icon [inline]="true">directions_car</mat-icon><mat-icon [inline]="true">arrow_forward</mat-icon></div> -->
-                <!-- todo bus stop -->
+                    <div class="zufahrt-text-sm">Zufahrt 2:<br>über Hettinger Straße</div>
+                <div class="zufahrt-logos-sm"><mat-icon [inline]="true">directions_bike</mat-icon><mat-icon [inline]="true">directions_car</mat-icon><mat-icon [inline]="true">arrow_forward</mat-icon></div>
             </div>
             <div fxHide.lt-sm class="busstop">
-                <div style="text-align: justify;font-size: 17px;    font-weight: 700;">Bushaltestelle:<br>blablub</div>
-                <div style="font-size:25px; text-align: justify">
+                <div class="zufahrt-text">Bushaltestelle:<br>blablub</div>
+                <div class="zufahrt-logos">
                <mat-icon [inline]="true">directions_bus</mat-icon></div>
             </div>
-            <div fxHide.lt-sm style="position: absolute; bottom:239px;left: 420px;font-size:0px;">
-                <img style="max-width:23px; height:auto;display: block; font-size:0px;" src="../../assets/img/dp_small.png"/>
-                <img style="max-width:23px; height:auto; font-size:0px;" src="../../assets/img/dhl_small.png"/>
+            <div fxHide.lt-sm class="dhl-parent">
+                <img class="dhl-img1" src="../../assets/img/dp_small.png"/>
+                <img class="dhl-img2" src="../../assets/img/dhl_small.png"/>
             </div>
-            <div fxHide fxShow.lt-sm style="position: absolute;     bottom: 106px;
-            left: 192px;font-size:0px;">
-                <img style="max-width:17px; height:auto; display: block;" src="../../assets/img/dp_mini.png"/>
-                <img style="max-width:17px; height:auto; font-size:0px;" src="../../assets/img/dhl_mini.png"/>
+            <div fxHide fxShow.lt-sm class="dhl-parent-sm">
+                <img class="dhl-img1-sm" src="../../assets/img/dp_mini.png"/>
+                <img class="dhl-img2-sm" src="../../assets/img/dhl_mini.png"/>
             </div>
 
             <div fxHide.lt-sm  class="s1label labelbase" matBadge="1" matBadgePosition="before" matBadgeSize="large" (mouseenter) ="mouseEnter(1) "  (mouseleave) ="mouseLeave(1)" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span [class.labelbg]="1 == activeShop" [class.labeltext]="1 == activeShop">&nbsp;{{dataService.shops[0].name}}&nbsp;</span>
