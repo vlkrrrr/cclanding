@@ -6,7 +6,7 @@ export class Shop {
     public fax: string;
     public email: string;
     public website: string;
-    public openhours: string;
+    public openhours: Array<[string, string]>;
     public note: string;
     public symbol: string;
     public showlogo: boolean;
