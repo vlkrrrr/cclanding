@@ -17,17 +17,17 @@
   </div>
   <div fxHide.lt-sm  fxLayout="row" fxLayoutAlign="center start">
     <div class="cap-content cap-addr">
-      Hettinger Straße 9, 49432 Osterhausen</div>
+      {{dataService.baseData.address}}</div>
     <div class="cap-addr-icon">
       <mat-icon [inline]="true">place</mat-icon>
     </div>
-    <div class="cap-content cap-addr"> <a href="https://www.google.com/maps?q=Alstercafé,+Ifflandstraße+45,+22087+Hamburg" target="_blank">Route
+    <div class="cap-content cap-addr"> <a [href]="dataService.baseData.googlemaps" target="_blank">Route
         planen (Google Maps)</a></div>
   </div>
   <div fxHide  fxShow.lt-sm  fxLayout="column" fxLayoutAlign="start center">
       <div class="cap-content cap-addr-sm">
         Hettinger Straße 9, 49432 Osterhausen</div>
-      <div class="cap-content cap-addr-icon-sm" ><mat-icon [inline]="true">place</mat-icon><a href="https://www.google.com/maps?q=Alstercafé,+Ifflandstraße+45,+22087+Hamburg" target="_blank">Route
+      <div class="cap-content cap-addr-icon-sm" ><mat-icon [inline]="true">place</mat-icon><a [href]="dataService.baseData.googlemaps" target="_blank">Route
           planen (Google Maps)</a></div>
     </div>
   <div class="cap-divider"></div>

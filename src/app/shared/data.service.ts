@@ -17,7 +17,11 @@ export class DataService {
   ccdata: Ccdata;
 
   baseData: BaseData = {
-    welcome: 'Initial Title'
+    welcome: 'Initial Title',
+    address: '',
+    googlemaps: '',
+    zufahrt1: '',
+    zufahrt2: ''
   }
   shops: Shop[] = [{id: 1, name: '', type:'', tel: '', fax: '' , email: '', website: '', openhours:[], note:'', symbol:'', showlogo: false, logopath:''},
   {id: 2, name: '', type:'', tel: '', fax: '' , email: '', website: '', openhours:[], note:'', symbol:'', showlogo: false, logopath:''},
@@ -50,4 +54,8 @@ interface Ccdata {
 
 interface BaseData {
   welcome: string;
+  address: string,
+  googlemaps: string,
+  zufahrt1: string,
+  zufahrt2: string
 }
