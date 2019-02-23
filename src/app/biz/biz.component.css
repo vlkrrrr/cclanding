@@ -28,8 +28,22 @@
    margin-top: 0;
  }
 
+.cap-openhours-day {
+  font-size: 11pt;
+  font-weight: 600;
+  display: inline-block; 
+  min-width: 50px; 
+  margin-top: 2px;
+}
+
+.cap-openhours-hours {
+  font-size: 11pt;
+  font-weight: 600;
+}
+
 .cap-bizlogo {
   height: 45px;
+
 }
 
 

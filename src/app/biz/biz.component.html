@@ -7,10 +7,8 @@
   </mat-card-header>
   <mat-card-content class="cap-card-content">
       <ng-container  *ngIf="biz.openhours.length > 0"><p class="cap-detail" style="margin-bottom:2px;">Öffnungszeiten:<br></p></ng-container> 
-
-<!-- <p *ngIf="biz.openhours" class="cap-detail"></p>Öffnungszeiten:<br><p class="cap-openhours" [innerHTML]="biz.openhours"></p> -->
 <ng-container *ngFor="let oh of biz.openhours">
-  <div style="margin: 0px;"><span style="font-size: 11pt;font-weight: 600;display: inline-block; min-width: 50px; margin-top: 2px;">{{oh[0]}}</span><span style="font-size: 11pt;font-weight: 600;">{{oh[1]}}</span></div>
+  <div><span class="cap-openhours-day">{{oh[0]}}</span><span class="cap-openhours-hours">{{oh[1]}}</span></div>
 </ng-container>
 <p *ngIf="biz.tel" class="cap-detail" style="margin-top:3px;">Telefon:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{biz.tel}}</p>
 <p *ngIf="biz.website" class="cap-detail" style="margin-top:0px;">Website:&nbsp;&nbsp;&nbsp;&nbsp;<a href="{{biz.website}}" target="_blank"><i class="fa fa-external-link" aria-hidden="true"></i> externer Link</a></p>
