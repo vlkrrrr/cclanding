@@ -1,6 +1,7 @@
 export class Shop {
     public id: number; 
     public name: string;
+    public htmlname: string;
     public type: string; //type of shop
     public tel: string;
     public fax: string;
