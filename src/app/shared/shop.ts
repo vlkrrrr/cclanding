@@ -4,6 +4,7 @@ export class Shop {
     public htmlname: string;
     public type: string; //type of shop
     public tel: string;
+    public telhtml: string;
     public fax: string;
     public email: string;
     public website: string;

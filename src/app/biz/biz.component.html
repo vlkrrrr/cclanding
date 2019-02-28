@@ -10,7 +10,7 @@
 <ng-container *ngFor="let oh of biz.openhours">
   <div><span class="cap-openhours-day">{{oh[0]}}</span><span class="cap-openhours-hours">{{oh[1]}}</span></div>
 </ng-container>
-<p *ngIf="biz.tel" class="cap-detail" style="margin-top:3px;">Telefon:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{biz.tel}}</p>
+<p *ngIf="biz.tel" class="cap-detail" style="margin-top:3px;">Telefon:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a [href]="'tel:' + biz.telhtml">{{biz.tel}}</a></p>
 <p *ngIf="biz.website" class="cap-detail" style="margin-top:0px;">Website:&nbsp;&nbsp;&nbsp;&nbsp;<a href="{{biz.website}}" target="_blank"><i class="fa fa-external-link" aria-hidden="true"></i> externer Link</a></p>
   </mat-card-content>
 </mat-card>
