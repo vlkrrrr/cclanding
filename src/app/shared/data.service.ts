@@ -23,15 +23,15 @@ export class DataService {
     zufahrt1: '',
     zufahrt2: ''
   }
-  shops: Shop[] = [{id: 1, name: '', htmlname: '', type:'', tel: '', telhtml: '', fax: '' , email: '', website: '', openhours:[], note:'', symbol:'', showlogo: false, logopath:''},
-  {id: 2, name: '', htmlname: '', type:'', tel: '', telhtml: '', fax: '' , email: '', website: '', openhours:[], note:'', symbol:'', showlogo: false, logopath:''},
-  {id: 3, name: '', htmlname: '', type:'', tel: '', telhtml: '', fax: '' , email: '', website: '', openhours:[], note:'', symbol:'', showlogo: false, logopath:''},
-  {id: 4, name: '', htmlname: '', type:'', tel: '', telhtml: '', fax: '' , email: '', website: '', openhours:[], note:'', symbol:'', showlogo: false, logopath:''},
-  {id: 5, name: '', htmlname: '', type:'', tel: '', telhtml: '', fax: '' , email: '', website: '', openhours:[], note:'', symbol:'', showlogo: false, logopath:''},
-  {id: 6, name: '', htmlname: '', type:'', tel: '', telhtml: '', fax: '' , email: '', website: '', openhours:[], note:'', symbol:'', showlogo: false, logopath:''},
-  {id: 7, name: '', htmlname: '', type:'', tel: '', telhtml: '', fax: '' , email: '', website: '', openhours:[], note:'', symbol:'', showlogo: false, logopath:''},
-  {id: 8, name: '', htmlname: '', type:'', tel: '', telhtml: '', fax: '' , email: '', website: '', openhours:[], note:'', symbol:'', showlogo: false, logopath:''},
-  {id: 9, name: '', htmlname: '', type:'', tel: '', telhtml: '', fax: '' , email: '', website: '', openhours:[], note:'', symbol:'', showlogo: false, logopath:''}
+  shops: Shop[] = [{id: 1, name: '', htmlname: '', type:'', tel: '', telhtml: '', fax: '' , cardphoto: '', cardphototitle: '', email: '', website: '', openhours:[], note:'', symbol:'', showlogo: false, logopath:''},
+  {id: 2, name: '', htmlname: '', type:'', tel: '', telhtml: '', fax: '' , cardphoto: '', cardphototitle: '', email: '', website: '', openhours:[], note:'', symbol:'', showlogo: false, logopath:''},
+  {id: 3, name: '', htmlname: '', type:'', tel: '', telhtml: '', fax: '' , cardphoto: '', cardphototitle: '', email: '', website: '', openhours:[], note:'', symbol:'', showlogo: false, logopath:''},
+  {id: 4, name: '', htmlname: '', type:'', tel: '', telhtml: '', fax: '' , cardphoto: '', cardphototitle: '', email: '', website: '', openhours:[], note:'', symbol:'', showlogo: false, logopath:''},
+  {id: 5, name: '', htmlname: '', type:'', tel: '', telhtml: '', fax: '' , cardphoto: '', cardphototitle: '', email: '', website: '', openhours:[], note:'', symbol:'', showlogo: false, logopath:''},
+  {id: 6, name: '', htmlname: '', type:'', tel: '', telhtml: '', fax: '' , cardphoto: '', cardphototitle: '', email: '', website: '', openhours:[], note:'', symbol:'', showlogo: false, logopath:''},
+  {id: 7, name: '', htmlname: '', type:'', tel: '', telhtml: '', fax: '' , cardphoto: '', cardphototitle: '', email: '', website: '', openhours:[], note:'', symbol:'', showlogo: false, logopath:''},
+  {id: 8, name: '', htmlname: '', type:'', tel: '', telhtml: '', fax: '' , cardphoto: '', cardphototitle: '', email: '', website: '', openhours:[], note:'', symbol:'', showlogo: false, logopath:''},
+  {id: 9, name: '', htmlname: '', type:'', tel: '', telhtml: '', fax: '' , cardphoto: '', cardphototitle: '', email: '', website: '', openhours:[], note:'', symbol:'', showlogo: false, logopath:''}
 ];
   
   getCenterData() {

@@ -6,6 +6,8 @@ export class Shop {
     public tel: string;
     public telhtml: string;
     public fax: string;
+    public cardphoto: string;
+    public cardphototitle: string;
     public email: string;
     public website: string;
     public openhours: Array<[string, string]>;
