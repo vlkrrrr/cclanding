@@ -14,12 +14,14 @@ import {
   MatListModule
 } from '@angular/material';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { AlertpanelComponent } from './alertpanel/alertpanel.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     BizComponent,
-    MapComponent
+    MapComponent,
+    AlertpanelComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,65 @@
+.cap-card {
+    max-width: 300px;
+  }
+  
+.mat-card {
+  color:#00a57c;
+}
+ 
+.mat-card-avatar {
+  font-size: 40px;
+}
+
+
+.cap-card-content {
+    font-size: 10pt;
+    color: #333;
+ }
+
+.cap-detail {
+  margin-bottom: 0;
+  margin-top:0;
+}
+
+.cap-openhours { 
+   font-size: 11pt;
+   font-weight: 600;
+   margin-bottom: 5;
+   margin-top: 0;
+ }
+
+.cap-openhours-day {
+  font-size: 11pt;
+  font-weight: 600;
+  display: inline-block; 
+  min-width: 50px; 
+  margin-top: 2px;
+}
+
+.cap-openhours-hours {
+  font-size: 11pt;
+  font-weight: 600;
+}
+
+.cap-bizlogo {
+  height: 45px;
+
+}
+
+
+a:link {
+  color:rgba(0, 0, 0, 0.54);
+  text-decoration: none;
+}
+a:visited {
+  color: rgba(0, 0, 0, 0.54);
+  text-decoration: none;
+}
+a:hover {
+  color:#00a57c;
+  text-decoration: none;
+}
+a:active {
+  color: rgba(0, 0, 0, 0.54);
+  text-decoration: none;
+} 
