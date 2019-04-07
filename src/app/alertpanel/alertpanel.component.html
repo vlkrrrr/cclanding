@@ -1,11 +1,10 @@
-<mat-card class="cap-card"   fxFlex="0 0 800px" fxFlex.lt-sm="0 0 300px" >
+<mat-card class="cap-card"   fxFlex="0 0 740px" fxFlex.lt-sm="0 0 300px" >
   <mat-card-header>
-    <div mat-card-avatar><mat-icon [inline]="true">cake</mat-icon></div>
-    <mat-card-title >asdasdasd</mat-card-title>
-    <mat-card-title>fghjsd</mat-card-title>
-    <mat-card-subtitle>dsfgdfgg</mat-card-subtitle>
+    <div mat-card-avatar><mat-icon [inline]="true">  {{dataService.alertPanel.symbol}}</mat-icon></div>
+    <mat-card-title>{{dataService.alertPanel.title}}</mat-card-title>
+    <mat-card-subtitle>&nbsp;</mat-card-subtitle>
   </mat-card-header>
-  <mat-card-content class="cap-card-content">
-    BLASDfsdf sdfsdfsdfsdfsdfsdf
+  <img mat-card-image  *ngIf="dataService.alertPanel.cardphoto" [src]="dataService.alertPanel.cardphoto" [alt]="dataService.alertPanel.cardphototitle">
+  <mat-card-content class="cap-alert-message" innerHtml="{{dataService.alertPanel.messagehtml}}">
   </mat-card-content>
 </mat-card>

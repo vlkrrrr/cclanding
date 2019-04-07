@@ -16,6 +16,15 @@ export class DataService {
   dataUrl = 'assets/data/production.json'
   ccdata: Ccdata;
 
+  alertPanel: AlertPanel = {
+    active: false,
+    title: '',
+    messagehtml: '',
+    symbol: '',
+    cardphoto: '',
+    cardphototitle: ''
+  }
+
   baseData: BaseData = {
     welcome: 'Initial Title',
     address: '',
@@ -43,12 +52,14 @@ constructor(private http: HttpClient) {
     .subscribe((data: Ccdata) => { this.ccdata = {...data},
     this.shops = this.ccdata.shops;
     this.baseData = this.ccdata.baseData;
+    this.alertPanel = this.ccdata.alertPanel;
   })
  }
 }
 
 interface Ccdata {
   baseData: BaseData;
+  alertPanel: AlertPanel;
   shops: Shop[];
 }
 
@@ -58,4 +69,13 @@ interface BaseData {
   googlemaps: string,
   zufahrt1: string,
   zufahrt2: string
+}
+
+interface AlertPanel {
+  active: boolean;
+  title: string;
+  messagehtml: string;
+  symbol:  string;
+  cardphoto: string;
+  cardphototitle: string;
 }

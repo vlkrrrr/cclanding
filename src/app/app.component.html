@@ -10,7 +10,10 @@
     </div>
 
     <div style="height: 20px;"></div>
+    <ng-container *ngIf="dataService.alertPanel.active">
     <div><app-alertpanel></app-alertpanel></div>
+    <div style="height: 20px;"></div>
+    </ng-container>
     <div fxLayout="row wrap" fxLayoutGap="15px grid" fxLayoutAlign="center start" >
       <ng-container *ngFor="let shop of dataService.shops; let i = index"  >
         <app-biz [biz]="shop"></app-biz>
