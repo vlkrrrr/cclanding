@@ -1,7 +1,7 @@
 <mat-card class="cap-card"   fxFlex="0 0 740px" fxFlex.lt-sm="0 0 300px" >
   <mat-card-header>
     <div mat-card-avatar><mat-icon [inline]="true">  {{dataService.alertPanel.symbol}}</mat-icon></div>
-    <mat-card-title>{{dataService.alertPanel.title}}</mat-card-title>
+    <mat-card-title [innerHTML]="dataService.alertPanel.title"></mat-card-title>
     <mat-card-subtitle>&nbsp;</mat-card-subtitle>
   </mat-card-header>
   <img mat-card-image  *ngIf="dataService.alertPanel.cardphoto" [src]="dataService.alertPanel.cardphoto" [alt]="dataService.alertPanel.cardphototitle">
