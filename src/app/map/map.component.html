@@ -1,7 +1,7 @@
 <mat-card class="example-card" fxLayout="row" fxLayoutAlign="center center">
     <mat-card-content >
         <div class="img-container">
-            <img src="../../assets/img/websitemap2smalla.png" alt="Übersichtskarte">   
+            <img src="../../assets/img/websitemap3small.png" alt="Übersichtskarte">   
             <div fxHide.lt-sm class="zufahrt1">
                 <div class="zufahrt-text" [innerHTML]="dataService.baseData.zufahrt1"></div>
                 <div class="zufahrt-logos">
@@ -63,6 +63,12 @@
             <div fxHide.lt-sm class="s9label labelbase" matBadge="9" matBadgePosition="before" matBadgeSize="large"  (mouseenter)="mouseEnter(9) "  (mouseleave) ="mouseLeave(9)">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span [class.labelbg]="9 == activeShop"  [class.labeltext]="9 == activeShop" [innerHTML]="dataService.shops[8].htmlname"></span>
             </div>  
             <div fxHide.lt-sm class="s9mover smooverbase"  (mouseenter) ="mouseEnter(9)" (tap)="mouseEnter(9)" (mouseleave) ="mouseLeave(9)"></div>
+            <div fxHide.lt-sm class="s10label labelbase" matBadge="10" matBadgePosition="before" matBadgeSize="large"  (mouseenter)="mouseEnter(10) "  (mouseleave) ="mouseLeave(10)">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span [class.labelbg]="10 == activeShop"  [class.labeltext]="10 == activeShop" [innerHTML]="dataService.shops[9].htmlname"></span>
+            </div>  
+            <div fxHide.lt-sm class="s10mover smooverbase"  (mouseenter) ="mouseEnter(10)" (tap)="mouseEnter(10)" (mouseleave) ="mouseLeave(10)"></div>
+            <div fxHide.lt-sm class="s11label labelbase" matBadge="11" matBadgePosition="before" matBadgeSize="large"  (mouseenter)="mouseEnter(11) "  (mouseleave) ="mouseLeave(11)">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span [class.labelbg]="11 == activeShop"  [class.labeltext]="11 == activeShop" [innerHTML]="dataService.shops[10].htmlname"></span>
+            </div>  
+            <div fxHide.lt-sm class="s11mover smooverbase"  (mouseenter) ="mouseEnter(11)" (tap)="mouseEnter(11)" (mouseleave) ="mouseLeave(11)"></div>
             <!-- small labels -->
             <div fxHide fxShow.lt-sm  class="s1label-sm labelbase" matBadge="1" matBadgePosition="before" matBadgeSize="medium" (mouseenter) ="mouseEnter(1) "  (mouseleave) ="mouseLeave(1)" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span [class.labelbg]="1 == activeShop" [class.labeltext]="1 == activeShop" [innerHTML]="dataService.shops[0].htmlname"></span>
             </div>
@@ -88,9 +94,15 @@
             <div fxHide fxShow.lt-sm class="s8label-sm labelbase" matBadge="8" matBadgePosition="before" matBadgeSize="medium"  (mouseenter) ="mouseEnter(8) "  (mouseleave) ="mouseLeave(8)" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span [class.labelbg]="8 == activeShop" [class.labeltext]="8 == activeShop" [innerHTML]="dataService.shops[7].htmlname"></span>
             </div>            
             <div fxHide fxShow.lt-sm class="s8mover-sm smooverbase-sm"  (mouseenter) ="mouseEnter(8) "  (mouseleave) ="mouseLeave(8)" (tap)="mouseEnter(8)"></div>
-            <div fxHide fxShow.lt-sm class="s9label-sm labelbase" matBadge="9" matBadgePosition="before" matBadgeSize="medium"  (mouseenter)="mouseEnter(9) "  (mouseleave) ="mouseLeave(9)">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span [class.labelbg]="9 == activeShop"  [class.labeltext]="9 == activeShop" [innerHTML]="dataService.shops[8].htmlname"></span>
+            <div fxHide fxShow.lt-sm class="s9label-sm labelbase" matBadge="9" matBadgePosition="before" matBadgeSize="medium"  (mouseenter)="mouseEnter(9) "  (mouseleave) ="mouseLeave(9)">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span [class.labelbg]="9 == activeShop" [style.display]="9 == activeShop ? 'inline-block' : 'none' "  [class.labeltext]="9 == activeShop" [innerHTML]="dataService.shops[8].htmlname"></span>
             </div>  
             <div fxHide fxShow.lt-sm class="s9mover-sm smooverbase-sm"  (mouseenter) ="mouseEnter(9)" (tap)="mouseEnter(9)" (mouseleave) ="mouseLeave(9)"></div>
+            <div fxHide fxShow.lt-sm class="s10label-sm labelbase" matBadge="10" matBadgePosition="before" matBadgeSize="medium"  (mouseenter)="mouseEnter(10) "  (mouseleave) ="mouseLeave(10)">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span [class.labelbg]="10 == activeShop"  [class.labeltext]="10 == activeShop" [innerHTML]="dataService.shops[9].htmlname"></span>
+            </div>  
+            <div fxHide fxShow.lt-sm class="s10mover-sm smooverbase-sm"  (mouseenter) ="mouseEnter(10)" (tap)="mouseEnter(10)" (mouseleave) ="mouseLeave(10)"></div>
+            <div fxHide fxShow.lt-sm class="s11label-sm labelbase" matBadge="11" matBadgePosition="before" matBadgeSize="medium"  (mouseenter)="mouseEnter(11) "  (mouseleave) ="mouseLeave(11)">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span [class.labelbg]="11 == activeShop"  [class.labeltext]="11 == activeShop" [innerHTML]="dataService.shops[10].htmlname"></span>
+            </div>  
+            <div fxHide fxShow.lt-sm class="s11mover-sm smooverbase-sm"  (mouseenter) ="mouseEnter(11)" (tap)="mouseEnter(11)" (mouseleave) ="mouseLeave(11)"></div>
         </div>
       
     </mat-card-content>

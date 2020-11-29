@@ -232,6 +232,22 @@ left: 433px;
   bottom: 280px;
   left: 475px;
 }
+.s10label {
+  bottom: 195px;
+  left: 540px;
+}
+.s10mover {
+  bottom: 193px;
+  left: 520px;
+}
+.s11label {
+  bottom: 125px;
+  left: 540px;
+}
+.s11mover {
+  bottom: 123px;
+  left: 520px;
+}
 
 /* small labels */
 
@@ -313,4 +329,20 @@ left: 433px;
 .s9mover-sm {
   bottom: 130px;
   left: 220px;
+}
+.s10label-sm {
+  bottom: 69px;
+  left: 252px;
+}
+.s10mover-sm {
+  bottom: 74px;
+  left: 240px;
+}
+.s11label-sm {
+  bottom: 15px;
+  left: 252px;
+}
+.s11mover-sm {
+  bottom: 20px;
+  left: 240px;
 }
