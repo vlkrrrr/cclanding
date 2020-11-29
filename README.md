@@ -7,4 +7,4 @@ simple angular project
 
 ng build --aot=true
 
-no base-href set
+no base-href set and just replace full folder
