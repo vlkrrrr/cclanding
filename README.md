@@ -5,6 +5,6 @@ simple angular project
 
 ###build
 
-ng build --aot=true
+ng build --prod --aot=true
 
 no base-href set and just replace full folder
